@@ -1,0 +1,196 @@
+@charset "utf-8";
+/* CSS Document */
+
+.navbar .nav-item .dropdown-menu li{
+	border-bottom: 1px solid #666666;
+}
+.navbar .nav-item .dropdown-menu{
+	padding-top: 0;
+	padding-bottom: 0;
+	background-color: black;
+}
+.navbar .nav-item .dropdown-menu .dropdown-item{
+	transform: all 0.7s;
+	color: white;
+}
+.navbar .nav-item .dropdown-menu .dropdown-item:hover{
+	padding-left: 25px;color: black;
+}
+.navbar .nav-item .nav-link{
+	padding: 8px 25px;
+	border-radius: 20px;
+	font-weight: 700;
+}
+.navbar .nav-item .nav-link:hover{
+	background-color: chocolate;
+	color: white;
+}
+main{
+	width: 100%;
+	min-height: 800px;
+}
+footer{
+	width: 100%;
+	min-height: 200px;
+}
+footer .navbar .nav-item .nav-link{
+	padding-left: 15px;
+}
+footer .navbar .nav-item .nav-link:hover{
+	color: #F76706;
+}
+@media(max-width:667px){
+	footer{
+		text-align: center;
+	}
+}
+.border-bot{
+	border-bottom: 3px dotted #C9C9C9;}
+.banner-r{
+	position: relative;
+}
+.banner-cover{
+	position: absolute;
+	color: white;
+	width: 90%;
+	height: 90%;
+	background-color: rgba(0,0,0,0.80);
+	left: 5%;
+	top:5%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	transform: scale(0)rotateY(360deg);
+	transform: all 0.7s
+}
+.banner-r:hover .banner-cover{
+	transform: scale(1)rotateY(0deg)
+}
+
+#sp-men .owl-nav { position:absolute; left:0px; top:40%; width:100%; }
+#sp-men .owl-nav [class*='owl-'] {
+	font-size:40px; /*background:rgba(255,255,255,.5);border:1px solid #fff; */ color: black;
+}
+
+#sp-men .owl-nav .owl-next{ position:absolute; right:-2%;}
+#sp-men .owl-nav .owl-prev{ position:absolute; left:-2%;}
+#sp-men .owl-nav [class*='owl-']:hover {
+      background:none;border: none;
+      color:chocolate;
+      text-decoration: none; }
+.hinh-sp{
+	position: relative;
+	overflow: hidden;
+}
+.social-icon{
+	position: absolute;
+	width: 80%;
+	height: 45px;
+	left: 10%;
+	top:110%;
+	display: flex;
+	justify-content:space-around;
+	transition: all 0.8s;
+}
+.social-icon a{
+	width: 45px;
+	height: 45px;
+	background-color: white;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	color: black;
+}
+.social-icon a:hover{
+	background-color: black;
+	color:white;
+}
+.hinh-sp:hover .social-icon{
+	top: 50%;
+}
+#sp-women .owl-nav { position:absolute; left:0px; top:40%; width:100%; }
+#sp-women .owl-nav [class*='owl-'] {
+	font-size:40px; /*background:rgba(255,255,255,.5);border:1px solid #fff; */ color: black;
+}
+
+#sp-women .owl-nav .owl-next{ position:absolute; right:-2%;}
+#sp-women .owl-nav .owl-prev{ position:absolute; left:-2%;}
+#sp-women .owl-nav [class*='owl-']:hover {
+      background:none;border: none;
+      color:chocolate;
+      text-decoration: none; }
+
+#sp-kid .owl-nav { position:absolute; left:0px; top:40%; width:100%; }
+#sp-kid .owl-nav [class*='owl-'] {
+	font-size:40px; /*background:rgba(255,255,255,.5);border:1px solid #fff; */ color: black;
+}
+
+#sp-kid .owl-nav .owl-next{ position:absolute; right:-2%;}
+#sp-kid .owl-nav .owl-prev{ position:absolute; left:-2%;}
+#sp-kid .owl-nav [class*='owl-']:hover {
+      background:none;border: none;
+      color:chocolate;
+      text-decoration: none; }
+.box{
+	width: 100%;
+	height: 100%;
+	background-color: #DFDFDF;
+	padding: 15px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.media-hinh{
+	position: relative;
+	overflow: hidden;
+}
+.hinh-cover{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.80);
+	left: 0;
+	top: 105%;
+	color: white;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	transition: all 1s
+}
+.hinh-cover a{
+	color: white;
+}
+.hinh-cover a:hover{
+	color: coral;
+}
+.media-hinh:hover .hinh-cover{
+	top: 0
+}
+@media(max-width:667px){
+	.hinh-cover{
+		display: none;
+	}
+}
+#product{
+	width: 100%;
+	min-height: 400px;
+	background-image: url("31.jpg");
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.caption{
+	color:coral;
+	width: 30%;
+	text-align: center;
+}
+.caption h1{
+	font-size: 40px;
+}
